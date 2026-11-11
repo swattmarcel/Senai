@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fábrica Escola – Simulação Industrial</title>
+  <meta name="description" content="Simulação completa de uma fábrica com etapas, linha de produção e jogos para jovens aprendizes.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏭</text></svg>">
+</head>
+<body>
+  <header class="topo">
+    <div class="marca" data-go="inicio" role="button" tabindex="0">
+      <span class="marca-icone">🏭</span>
+      <div>
+        <strong>Fábrica Escola</strong>
+        <small>Simulação Industrial para Jovens Aprendizes</small>
+      </div>
+    </div>
+    <nav class="menu" id="menu">
+      <button data-go="inicio">🏠 Início</button>
+      <button data-go="fabrica">🏭 Jornada na Fábrica</button>
+      <button data-go="linha">⚙️ Linha de Produção</button>
+      <button data-go="jogos">🎮 Jogos</button>
+      <button data-go="ranking">🏆 Ranking</button>
+    </nav>
+    <div class="jogador" id="jogador"></div>
+  </header>
+
+  <main id="app" class="conteudo"></main>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+  <div id="modal" class="modal oculto" role="dialog" aria-modal="true"></div>
+
+  <footer class="rodape">
+    Fábrica Escola · Aprendizagem Industrial · Os dados ficam salvos neste navegador.
+  </footer>
+
+  <script src="js/core.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/etapas.js"></script>
+  <script src="js/linha.js"></script>
+  <script src="js/jogos.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
